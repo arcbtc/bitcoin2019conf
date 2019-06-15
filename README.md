@@ -11,11 +11,13 @@ Download a portable version of the Arduino IDE with the project files included:
 Install the Arduino IDE,<br>
 https://www.arduino.cc/en/Main/Software
 
-<br>
+
+
 Install the ESP32 hardware,<br>
 https://github.com/espressif/arduino-esp32#installation-instructions
 
-<br>
+
+
 From "Manage Libraries" install,<br>
 - GxEPD2
 - ArduinoJson
