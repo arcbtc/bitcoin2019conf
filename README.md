@@ -27,6 +27,7 @@ From "Manage Libraries" install,<br>
 [![a](https://i.imgur.com/mCfnhZN.png)]
 
 <h2>ESP32 Devkit V1 GPIO map</h2>
+
 *Details on wiring can be found at the header of each ino file*
 
 [![ESP32 GPIO Map](https://i.imgur.com/iK3pCjt.jpg)]
