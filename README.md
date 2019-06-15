@@ -1,5 +1,5 @@
 # bitcoin2019conf
-*Two tutorials I will be running at  bitcoin2019conf.
+*Two tutorials I will be running at  bitcoin2019conf.*
 
 Download a portable version of the Arduino IDE with the project files included:
 
