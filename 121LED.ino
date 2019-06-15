@@ -1,3 +1,15 @@
+/**
+ *  1.21 LED
+ *
+ *  Make a payment module that accepts bitcoin via Lightning Network to turn an LED on
+ *  (project can easily be retrofitted in any device that turns something on for a period of time)
+ *
+ *  PI
+ *  Epaper PIN Map: [VCC - 3.3V, GND - GND, 
+ *  is approximately twice as tall as wide.
+ *
+ */
+
 #include <WiFiClientSecure.h>
 
 #include <ArduinoJson.h> //Most current version can be used
