@@ -1,9 +1,21 @@
-#include <WiFi.h>
+/**
+ *  Flux Capacitor PoS Terminal - a point of sale terminal which can accept bitcoin via lightning network
+ *  
+ *
+ *  Epaper PIN MAP: [VCC - 3.3V, GND - GND, SDI - GPIO23, SCLK - GPIO18, 
+ *                   CS - GPIO5, D/C - GPIO17, Reset - GPIO16, Busy - GPIO4]
+ *                   
+ *  Keypad Matrix PIN MAP: [GPIO12 - GPIO35]
+ *
+ *  LED PIN MAP: [POS (long leg) - GPIO15, NEG (short leg) - GND]
+ *
+ */
+
+ 
 #include <WiFiClientSecure.h>
 
 #include <ArduinoJson.h> //Use version 5.3.0!
 #include <GxEPD2_BW.h>
-#include <GxEPD2_3C.h>
 #include <qrcode.h>
 #include <string.h>
 
@@ -14,7 +26,7 @@
 #include <Fonts/FreeSansBold12pt7b.h>
 
 
-GxEPD2_BW<GxEPD2_154, GxEPD2_154::HEIGHT> display(GxEPD2_154(/*CS=5*/ SS, /*DC=*/ 22, /*RST=*/ 21, /*BUSY=*/ 4));
+GxEPD2_BW<GxEPD2_154, GxEPD2_154::HEIGHT> display(GxEPD2_154(/*CS=5*/ SS, /*DC=*/ 17, /*RST=*/ 16, /*BUSY=*/ 4));
 
 char wifiSSID[] = "YOUR-WIFI";
 char wifiPASS[] = "YOUR-WIFI-PASS";
@@ -32,7 +44,6 @@ String data_lightning_invoice_payreq = "";
 String data_status = "unpaid";
 String data_id = "";
 int counta = 0;
-#include "opennode.h"
 
 
 //Set other Arduino Strings used
@@ -110,12 +121,16 @@ Serial.begin(115200);
      
   Serial.println("connected");
 
+  pinMode(19, OUTPUT);
+
   ONprice();
 
 }
 
 void loop() {
   
+memset(maxdig, 0, 20);
+checker = 20;
 int counta = 0;
 
 hexvalues = "";
@@ -173,30 +188,16 @@ fetchpayment(amount);
    counta++;
   }
   else{
+  digitalWrite(19, HIGH);
+  delay(4000);
+  digitalWrite(19, LOW);
   delay(500);
   counta = 30;
     }  
   }
   counta = 0;
   
-  display.firstPage();
-  do
-  {
-  display.setRotation(1);
-  display.fillScreen(GxEPD_WHITE);
-  display.setFont(&FreeSansBold12pt7b);
-  display.setTextColor(GxEPD_BLACK);
-  display.setCursor(20, 20);
-  display.println("Ready");
-  display.println("");
-  display.setFont(&FreeSansBold9pt7b);
-  display.println("Press button to start");
 
-  }
-  while (display.nextPage());{
-  }
-  
-  esp_deep_sleep_start();
 }
 
 
@@ -383,18 +384,24 @@ void ONprice(){
     }
   }
   String line = client.readStringUntil('\n');
- 
-const size_t capacity = 169*JSON_OBJECT_SIZE(1) + JSON_OBJECT_SIZE(168) + 3800;
+  
+    const size_t capacity = 169*JSON_OBJECT_SIZE(1) + JSON_OBJECT_SIZE(168) + 3800;
+    DynamicJsonDocument doc(capacity);
 
-DynamicJsonBuffer jsonBuffer(capacity);
+    deserializeJson(doc, line);
 
-JsonObject& root = jsonBuffer.parseObject(line);
-
-JsonObject& data = root["data"];
-
-String temp = data[on_currency][on_currency.substring(3)]; 
+String temp = doc["data"][on_currency][on_currency.substring(3)]; 
 price = temp;
 Serial.println(price);
+
+
+
+
+
+    String data_idd = doc["data"]["id"]; 
+    data_id = data_idd;
+    String data_lightning_invoice_payreqq = doc["data"]["lightning_invoice"]["payreq"];
+    data_lightning_invoice_payreq = data_lightning_invoice_payreqq;
 
 }
 
@@ -433,17 +440,15 @@ void fetchpayment(String SATSAMOUNT){
   String line = client.readStringUntil('\n');
 
   
-const size_t capacity = 169*JSON_OBJECT_SIZE(1) + JSON_OBJECT_SIZE(168) + 3800;
-DynamicJsonBuffer jsonBuffer(capacity);
+    const size_t capacity = 169*JSON_OBJECT_SIZE(1) + JSON_OBJECT_SIZE(168) + 3800;
+    DynamicJsonDocument doc(capacity);
 
-JsonObject& root = jsonBuffer.parseObject(line);
+    deserializeJson(doc, line);
 
-JsonObject& data = root["data"];
-String data_idd = data["id"]; 
-data_id = data_idd;
-String data_lightning_invoice_payreqq = data["lightning_invoice"]["payreq"];
-data_lightning_invoice_payreq = data_lightning_invoice_payreqq;
-Serial.println(data_lightning_invoice_payreq);
+    String data_idd = doc["data"]["id"]; 
+    data_id = data_idd;
+    String data_lightning_invoice_payreqq = doc["data"]["lightning_invoice"]["payreq"];
+    data_lightning_invoice_payreq = data_lightning_invoice_payreqq;
 }
 
 
@@ -481,13 +486,11 @@ void checkpayment(String PAYID){
 
   
 const size_t capacity = JSON_OBJECT_SIZE(1) + JSON_OBJECT_SIZE(2) + JSON_OBJECT_SIZE(4) + JSON_OBJECT_SIZE(14) + 650;
-DynamicJsonBuffer jsonBuffer(capacity);
+ DynamicJsonDocument doc(capacity);
 
-JsonObject& root = jsonBuffer.parseObject(line);
+    deserializeJson(doc, line);
 
-JsonObject& data = root["data"];
-String data_statuss = data["status"]; 
+String data_statuss = doc["data"]["status"]; 
 data_status = data_statuss;
 Serial.println(data_status);
-
 }
