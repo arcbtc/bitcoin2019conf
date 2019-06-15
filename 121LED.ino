@@ -93,7 +93,7 @@ Serial.begin(115200);
   Serial.println("connected");
 
 
-  pinMode(27, OUTPUT);
+  pinMode(15, OUTPUT);
 
 }
 
