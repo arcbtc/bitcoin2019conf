@@ -1,12 +1,11 @@
 /**
- *  1.21 LED
+ *  1.21 LED - a payment module that accepts bitcoin via Lightning Network to turn an LED on
+ *  (the project can easily be adapted and retrofitted in any device that turns something on for a period of time)
  *
- *  Make a payment module that accepts bitcoin via Lightning Network to turn an LED on
- *  (project can easily be retrofitted in any device that turns something on for a period of time)
+ *  Epaper PIN MAP: [VCC - 3.3V, GND - GND, SDI - GPIO23, SCLK - GPIO18, 
+ *                   CS - GPIO5, D/C - GPIO17, Reset - GPIO16, Busy - GPIO4]
  *
- *  PI
- *  Epaper PIN Map: [VCC - 3.3V, GND - GND, 
- *  is approximately twice as tall as wide.
+ *  LED PIN MAP: [POS (long leg) - GPIO15, NEG (short leg) - GND]
  *
  */
 
@@ -142,39 +141,22 @@ fetchpayment();
 
  
   checkpayment(data_id);
- while (counta < 30){
+ while (counta < 120){
   if (data_status == "unpaid"){
     delay(1000);
    checkpayment(data_id);
    counta++;
   }
   else{
-  digitalWrite(27, HIGH);
+  digitalWrite(15, HIGH);
   delay(4000);
-  digitalWrite(27, LOW);
+  digitalWrite(15, LOW);
   delay(500);
-  counta = 30;
+  counta = 120;
     }  
   }
   counta = 0;
-  
-  display.firstPage();
-  do
-  {
-  display.fillScreen(GxEPD_WHITE);
-  display.setFont(&FreeSansBold18pt7b);
-  display.setTextColor(GxEPD_BLACK);
-  display.setCursor(20, 80);
-  display.println("  ONLY");
-  display.println(" 400SATS!");
-  display.setFont(&FreeSansBold9pt7b);
-  display.println(" Press button for QR");
-
-  }
-  while (display.nextPage());{
-  }
-  
-  esp_deep_sleep_start();
+ 
 }
 
 
@@ -290,8 +272,6 @@ void checkpayment(String PAYID){
   }
   String line = client.readStringUntil('\n');
 
-
-  
 const size_t capacity = JSON_OBJECT_SIZE(1) + JSON_OBJECT_SIZE(2) + JSON_OBJECT_SIZE(4) + JSON_OBJECT_SIZE(14) + 650;
  DynamicJsonDocument doc(capacity);
 
