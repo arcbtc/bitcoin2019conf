@@ -26,6 +26,8 @@ From "Manage Libraries" install,<br>
 
 [![a](https://i.imgur.com/mCfnhZN.png)]
 
+<h2>ESP32 GPIO map
+
 [![ESP32 GPIO Map](https://i.imgur.com/iK3pCjt.jpg)]
 
 
