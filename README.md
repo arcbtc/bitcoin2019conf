@@ -7,7 +7,7 @@ Sign up to OpenNode here https://opennode.co/join/f774f2a0-1377-45e2-b719-6b821f
 
 - Windows
 - Mac
-- Linux
+- Linux https://mega.nz/#!8LAhgSYb!sTajQUSvJ-xaI8Sh7_DxuBNaIQq34AYIkLLitxt4X80
 
 <h2>Alternatively:</h2>
 Install the Arduino IDE,<br>
