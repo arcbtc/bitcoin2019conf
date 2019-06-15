@@ -1,5 +1,7 @@
 # bitcoin2019conf
-Two tutorials I will be running at  https://www.bitcoin2019conference.com/.
+Two OpenNode tutorials I will be running at  https://www.bitcoin2019conference.com/.
+
+Sign up to OpenNode here https://opennode.co/join/f774f2a0-1377-45e2-b719-6b821f24900d.
 
 Download a portable version of the Arduino IDE with the project files included:
 
