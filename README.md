@@ -6,7 +6,6 @@ Sign up to OpenNode here https://opennode.co/join/f774f2a0-1377-45e2-b719-6b821f
 <h2>Download a portable Arduino IDE with the project files included:</h2>
 
 - Windows
-- Mac
 - Linux https://mega.nz/#!8LAhgSYb!sTajQUSvJ-xaI8Sh7_DxuBNaIQq34AYIkLLitxt4X80
 
 <h2>Alternatively:</h2>
