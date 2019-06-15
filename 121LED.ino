@@ -93,7 +93,7 @@ Serial.begin(115200);
   Serial.println("connected");
 
 
-  pinMode(15, OUTPUT);
+  pinMode(19, OUTPUT);
 
 }
 
@@ -148,9 +148,9 @@ fetchpayment();
    counta++;
   }
   else{
-  digitalWrite(15, HIGH);
+  digitalWrite(19, HIGH);
   delay(4000);
-  digitalWrite(15, LOW);
+  digitalWrite(19, LOW);
   delay(500);
   counta = 120;
     }  
