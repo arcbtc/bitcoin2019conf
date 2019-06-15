@@ -3,13 +3,13 @@ Two OpenNode tutorials I will be running at  https://www.bitcoin2019conference.c
 
 Sign up to OpenNode here https://opennode.co/join/f774f2a0-1377-45e2-b719-6b821f24900d.
 
-<h2>Download a portable Arduino IDE with the project files included</h2>
+<h2>Download a portable Arduino IDE with the project files included:</h2>
 
 - Windows
 - Mac
 - Linux
 
-<h2>Alternatively</h2>
+<h2>Alternatively:</h2>
 Install the Arduino IDE,<br>
 https://www.arduino.cc/en/Main/Software
 
