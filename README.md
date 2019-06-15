@@ -8,17 +8,20 @@ Mac
 Linux
 
 Alternatively:
-Install the Arduino IDE
+Install the Arduino IDE,
 https://www.arduino.cc/en/Main/Software
 
-Install the ESP32 hardware
+Install the ESP32 hardware,
 https://github.com/espressif/arduino-esp32#installation-instructions
 
-From Manage Libraries install,
+From "Manage Libraries" install,
 - GxEPD2
 - ArduinoJson
 - QRCode
 - AdaFruit GFX
+- Keypad
 
 https://i.imgur.com/mCfnhZN.png
+
+
 
