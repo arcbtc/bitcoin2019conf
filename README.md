@@ -5,8 +5,8 @@ Sign up to OpenNode here https://opennode.co/join/f774f2a0-1377-45e2-b719-6b821f
 
 <h2>Download a portable Arduino IDE with the project files included:</h2>
 
-- Windows https://mega.nz/#!sS4yDSyB!Bc7Kgn4v3jtM23OmJ7g1yUiLKm3c8E3NjmxQWF19ccc (run "Arduino.exe")
-- Linux https://mega.nz/#!8LAhgSYb!sTajQUSvJ-xaI8Sh7_DxuBNaIQq34AYIkLLitxt4X80 (run "Arduino" from terminal)
+- Windows https://mega.nz/#!sS4yDSyB!Bc7Kgn4v3jtM23OmJ7g1yUiLKm3c8E3NjmxQWF19ccc (Unzip and run "Arduino.exe")
+- Linux https://mega.nz/#!8LAhgSYb!sTajQUSvJ-xaI8Sh7_DxuBNaIQq34AYIkLLitxt4X80 (Unzip and run "Arduino" from terminal)
 
 <h2>Alternatively:</h2>
 Install the Arduino IDE,<br>
