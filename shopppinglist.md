@@ -1,7 +1,7 @@
 # Shopping list - $20ish
 
 
-+ <a href="https://www.aliexpress.com/item/MH-ET-LIVE-1-54-Inch-Epaper-Module-E-paper-E-Ink-EInk-Display-Screen-SPI/32915952925.html?spm=2114.search0104.3.1.22fc23aeXlZSqO&ws_ab_test=searchweb0_0,searchweb201602_6_10065_10130_10068_10547_319_317_10548_10696_10192_10190_453_10084_454_10083_10618_10307_10820_10301_10821_10303_537_536_10059_10884_10887_321_322_10103,searchweb201603_55,ppcSwitch_0&algo_expid=f1ceb623-a63d-4660-a4a1-32acc16444f4-0&algo_pvid=f1ceb623-a63d-4660-a4a1-32acc16444f4">MH-ET-LIVE Epaper</a> $11
++ <a href="https://www.aliexpress.com/item/MH-ET-LIVE-1-54-Inch-Epaper-Module-E-paper-E-Ink-EInk-Display-Screen-SPI/32915952925.html?spm=2114.search0104.3.1.22fc23aeXlZSqO&ws_ab_test=searchweb0_0,searchweb201602_6_10065_10130_10068_10547_319_317_10548_10696_10192_10190_453_10084_454_10083_10618_10307_10820_10301_10821_10303_537_536_10059_10884_10887_321_322_10103,searchweb201603_55,ppcSwitch_0&algo_expid=f1ceb623-a63d-4660-a4a1-32acc16444f4-0&algo_pvid=f1ceb623-a63d-4660-a4a1-32acc16444f4">MH-ET-LIVE Epaper</a> (the PointofSale project uses the BW version, as tri-colour displays are slower) $11
 
 + <a href="https://www.aliexpress.com/item/ESP-32-ESP-32S-Wireless-WiFi-Bluetooth-Development-Board-2-4GHz-Micro-USB-CP2102-Dual-Core/32906857429.html?spm=2114.search0104.3.16.1e8a40716QpFAb&ws_ab_test=searchweb0_0,searchweb201602_6_10065_10130_10068_10547_319_317_10548_10696_10192_10190_453_10084_454_10083_10618_10307_10820_10301_10821_10303_537_536_10059_10884_10887_321_322_10103,searchweb201603_55,ppcSwitch_0&algo_expid=4d03f715-2ee1-4a5f-bc96-02c29c58aa29-2&algo_pvid=4d03f715-2ee1-4a5f-bc96-02c29c58aa29">ESP32</a> $5
 
