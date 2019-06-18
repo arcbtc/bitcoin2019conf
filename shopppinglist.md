@@ -1,9 +1,12 @@
-# Shopping list
+# Shopping list - $20ish
 
 
++ <a href="https://www.aliexpress.com/item/MH-ET-LIVE-1-54-Inch-Epaper-Module-E-paper-E-Ink-EInk-Display-Screen-SPI/32915952925.html?spm=2114.search0104.3.1.22fc23aeXlZSqO&ws_ab_test=searchweb0_0,searchweb201602_6_10065_10130_10068_10547_319_317_10548_10696_10192_10190_453_10084_454_10083_10618_10307_10820_10301_10821_10303_537_536_10059_10884_10887_321_322_10103,searchweb201603_55,ppcSwitch_0&algo_expid=f1ceb623-a63d-4660-a4a1-32acc16444f4-0&algo_pvid=f1ceb623-a63d-4660-a4a1-32acc16444f4">MH-ET-LIVE Epaper</a>
 
-+ MH-ET-LIVE Epaper https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20190618050201&SearchText=MH-ET-LIVE+epaper
-
-+ ESP32 https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20190618050652&SearchText=esp32
++ <a href="https://www.aliexpress.com/item/ESP-32-ESP-32S-Wireless-WiFi-Bluetooth-Development-Board-2-4GHz-Micro-USB-CP2102-Dual-Core/32906857429.html?spm=2114.search0104.3.16.1e8a40716QpFAb&ws_ab_test=searchweb0_0,searchweb201602_6_10065_10130_10068_10547_319_317_10548_10696_10192_10190_453_10084_454_10083_10618_10307_10820_10301_10821_10303_537_536_10059_10884_10887_321_322_10103,searchweb201603_55,ppcSwitch_0&algo_expid=4d03f715-2ee1-4a5f-bc96-02c29c58aa29-2&algo_pvid=4d03f715-2ee1-4a5f-bc96-02c29c58aa29">ESP32</a> 
 
 + <a href="https://www.aliexpress.com/item/16-Key-Membrane-Switch-Keypad-4X4-Matrix-Keyboard-for-arduino-Diy-Kit/32874565775.html?spm=2114.search0104.3.8.530b6c7aS1qeNB&ws_ab_test=searchweb0_0,searchweb201602_6_10065_10130_10068_10547_319_317_10548_10696_10192_10190_453_10084_454_10083_10618_10307_10820_10301_10821_10303_537_536_10059_10884_10887_321_322_10103,searchweb201603_55,ppcSwitch_0&algo_expid=f9e97f5d-f39e-404a-a3d0-12db959c0040-1&algo_pvid=f9e97f5d-f39e-404a-a3d0-12db959c0040">Keypad Matrix</a> 
+
++ <a href="https://www.aliexpress.com/item/40PIN-Dupont-Line-10CM-20CM-30CM-Female-to-Male-and-Female-to-Female-Jumper-Wire-Dupont/32956301840.html?spm=2114.search0104.3.17.34934da5LJUVqu&ws_ab_test=searchweb0_0,searchweb201602_6_10065_10130_10068_10547_319_317_10548_10696_10192_10190_453_10084_454_10083_10618_10307_10820_10301_10821_10303_537_536_10059_10884_10887_321_322_10103,searchweb201603_55,ppcSwitch_0&algo_expid=9ef73332-820f-45ca-82cf-6c768d15550b-2&algo_pvid=9ef73332-820f-45ca-82cf-6c768d15550b">Jump wires </a>
+
++ <a href="https://www.aliexpress.com/item/100pcs-5mm-LED-diode-Light-Assorted-Kit-DIY-LEDs-Set-White-Yellow-Red-Green-Blue-free/32323764461.html?spm=2114.search0104.3.11.5d4269f4t3ClBI&ws_ab_test=searchweb0_0,searchweb201602_6_10065_10130_10068_10547_319_317_10548_10696_10192_10190_453_10084_454_10083_10618_10307_10820_10301_10821_10303_537_536_10059_10884_10887_321_322_10103,searchweb201603_55,ppcSwitch_0&algo_expid=29002c72-b315-4704-8ab1-00a8fd930bb5-1&algo_pvid=29002c72-b315-4704-8ab1-00a8fd930bb5">LEDs</a>
