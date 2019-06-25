@@ -395,14 +395,6 @@ price = temp;
 Serial.println(price);
 
 
-
-
-
-    String data_idd = doc["data"]["id"]; 
-    data_id = data_idd;
-    String data_lightning_invoice_payreqq = doc["data"]["lightning_invoice"]["payreq"];
-    data_lightning_invoice_payreq = data_lightning_invoice_payreqq;
-
 }
 
 
